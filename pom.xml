@@ -1,35 +1,33 @@
-```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0">
 
-    <modelVersion>4.0.0</modelVersion>
+```
+<modelVersion>4.0.0</modelVersion>
 
-    <parent>
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.5.3</version>
+</parent>
+
+<groupId>com.kasir</groupId>
+<artifactId>kasir-web</artifactId>
+<version>1.0</version>
+
+<dependencies>
+    <dependency>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.3</version>
-    </parent>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+</dependencies>
 
-    <groupId>com.kasir</groupId>
-    <artifactId>kasir-web</artifactId>
-    <version>1.0</version>
-
-    <dependencies>
-
-        <dependency>
+<build>
+    <plugins>
+        <plugin>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+```
 
 </project>
-```
